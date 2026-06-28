@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            🍽️ Comprehensive Analysis and Dietary Strategies with Tableau
+        </h1>
+
+        <h2>
+            A College Food Choices Case Study
+        </h2>
+
+        <p>
+            This project explores students' food choices, dietary habits,
+            nutritional preferences, and lifestyle patterns using
+            interactive Tableau dashboards integrated with a Flask web
+            application.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="{{ url_for('dashboard1') }}" class="btn">
+                📊 View Dashboard
+            </a>
+
+            <a href="{{ url_for('story') }}" class="btn">
+                📖 View Story
+            </a>
+
+            <a href="{{ url_for('about') }}" class="btn">
+                ℹ️ About Project
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<section class="cards">
+
+    <div class="card">
+
+        <h2>🥗 Healthy Food Analysis</h2>
+
+        <p>
+            Discover eating habits, balanced diets,
+            and nutrition trends among college students.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📊 Interactive Tableau Dashboard</h2>
+
+        <p>
+            Explore interactive charts and visualizations
+            that reveal food consumption patterns
+            and dietary preferences.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📖 Story Visualization</h2>
+
+        <p>
+            Follow an interactive story presenting
+            meaningful insights and conclusions
+            from the food choices dataset.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="dashboard-info">
+
+    <h2>🎯 Project Objectives</h2>
+
+    <ul>
+
+        <li>✔ Analyze students' food consumption patterns.</li>
+
+        <li>✔ Compare healthy and unhealthy food choices.</li>
+
+        <li>✔ Understand nutrition preferences.</li>
+
+        <li>✔ Visualize data using Tableau dashboards.</li>
+
+        <li>✔ Present insights through an interactive story.</li>
+
+        <li>✔ Build a secure Flask web application.</li>
+
+    </ul>
+
+</section>
+
+{% endblock %}

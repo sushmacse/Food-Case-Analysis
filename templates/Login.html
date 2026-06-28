@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <h1>🍽️ Food Choice Analytics</h1>
+
+        <h2>Welcome Back</h2>
+
+        <p>
+            Login to explore interactive Tableau dashboards and dietary insights.
+        </p>
+
+        <form method="POST" action="{{ url_for('login') }}">
+
+            <label>Username</label>
+
+            <input
+                type="text"
+                name="username"
+                placeholder="Enter Username"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+            >
+
+            <button type="submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <p class="bottom-text">
+
+            Don't have an account?
+
+            <a href="{{ url_for('register') }}">
+
+                Create Account
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

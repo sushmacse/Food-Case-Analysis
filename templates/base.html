@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Food Choices Analytics</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+{% if session.get('user_id') %}
+
+<div class="sidebar">
+
+    <div class="logo">
+        🍽️
+        <h2>Food Choice Analytics</h2>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="{{ url_for('home') }}">
+                🏠 Home
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('dashboard1') }}">
+                📊 Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('story') }}">
+                📖 Story
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('about') }}">
+                ℹ️ About
+            </a>
+        </li>
+
+    </ul>
+
+    <a class="logout-btn" href="{{ url_for('logout') }}">
+        🚪 Logout
+    </a>
+
+</div>
+
+<div class="main-content">
+
+<header>
+
+<div>
+
+<h1>
+Comprehensive Analysis and Dietary Strategies with Tableau
+</h1>
+
+<p>
+A College Food Choices Case Study
+</p>
+
+</div>
+
+<button onclick="toggleTheme()" class="theme-btn">
+
+🌙 Theme
+
+</button>
+
+</header>
+
+{% endif %}
+
+{% block content %}
+{% endblock %}
+
+{% if session.get('user_id') %}
+</div>
+{% endif %}
+
+</body>
+</html>

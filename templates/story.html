@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Food Choices Story</title>
+
+<style>
+
+body{
+
+margin:0;
+
+background:#f4f7fb;
+
+}
+
+.tableauPlaceholder{
+
+width:100%;
+
+height:100vh;
+
+}
+
+object{
+
+width:100%!important;
+
+height:100vh!important;
+
+}
+
+</style>
+
+</head>
+
+<body>
+<a href="{{ url_for('home') }}" class="back-btn">← Home</a>
+<div class='tableauPlaceholder' id='vizStory'>
+
+<object class='tableauViz'>
+
+<param name='host_url' value='https://public.tableau.com/' />
+
+<param name='embed_code_version' value='3' />
+
+<param name='site_root' value='' />
+
+<param name='name' value='Book1_17826389600130/Story1' />
+
+<param name='tabs' value='no' />
+
+<param name='toolbar' value='yes' />
+
+<param name='display_spinner' value='yes' />
+
+<param name='display_overlay' value='yes' />
+
+<param name='display_count' value='yes' />
+
+</object>
+
+</div>
+
+<script type='text/javascript'>
+
+var divElement=document.getElementById('vizStory');
+
+var vizElement=divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width='100%';
+
+vizElement.style.height='100vh';
+
+var scriptElement=document.createElement('script');
+
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+
+vizElement.parentNode.insertBefore(scriptElement,vizElement);
+
+</script>
+
+</body>
+
+</html>

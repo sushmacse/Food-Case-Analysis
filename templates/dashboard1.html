@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#f5f7fb;
+    overflow:hidden;
+}
+
+.back-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:600;
+    z-index:9999;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.tableauPlaceholder{
+    width:100%;
+    height:100vh;
+}
+
+.tableauViz{
+    width:100%!important;
+    height:100vh!important;
+}
+
+</style>
+
+</head>
+
+<body><a href="{{ url_for('home') }}" class="back-btn">← Home</a>
+<a href="{{ url_for('home') }}" class="back-btn">
+🏠 Home
+</a>
+
+<div class='tableauPlaceholder' id='vizDashboard'>
+
+<object class='tableauViz'>
+
+<param name='host_url' value='https://public.tableau.com/' />
+
+<param name='embed_code_version' value='3' />
+
+<param name='site_root' value='' />
+
+<param name='name' value='Book2_17826390323580/Dashboard1' />
+
+<param name='tabs' value='no' />
+
+<param name='toolbar' value='yes' />
+
+<param name='display_spinner' value='yes' />
+
+<param name='display_overlay' value='yes' />
+
+<param name='display_count' value='yes' />
+
+</object>
+
+</div>
+
+<script type='text/javascript'>
+
+var divElement=document.getElementById('vizDashboard');
+
+var vizElement=divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width='100%';
+
+vizElement.style.height='100vh';
+
+var scriptElement=document.createElement('script');
+
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+
+vizElement.parentNode.insertBefore(scriptElement,vizElement);
+
+</script>
+
+</body>
+</html>
