@@ -73,7 +73,10 @@ The dashboards provide meaningful insights through interactive visualizations th
 
 > **YOUR_RENDER_LINK_HERE**
 
-(Add your Render deployment link after hosting.)
+Live Demo
+
+Render Deployment:
+https://food-case-analysis-1.onrender.com
 
 ---
 
@@ -81,8 +84,8 @@ The dashboards provide meaningful insights through interactive visualizations th
 
 ### Demo Video
 
-> **Add your Google Drive Demo Video Link here**
-
+> [**Add your Google Drive Demo Video Link here**
+](https://drive.google.com/file/d/1d_ToMkbCwmhLZ-d8cycIj2wJNIPwOvlN/view?usp=sharing)
 ---
 
 # 📸 Application Preview
