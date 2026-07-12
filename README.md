@@ -296,17 +296,16 @@ This repository includes complete project documentation.
 Paste your Google Drive video link here.
 
 ```
-https://YOUR_GOOGLE_DRIVE_LINK
+https://(https://drive.google.com/file/d/1d_ToMkbCwmhLZ-d8cycIj2wJNIPwOvlN/view?usp=sharing)
 ```
 
 ---
 
 # 🌐 Live Demo
 
-Render Deployment
 
-```
-https://YOUR_RENDER_LINK
+Render Deployment:
+https://food-case-analysis-1.onrender.com
 ```
 
 (Add after deployment)
@@ -367,13 +366,6 @@ GitHub
 https://github.com/sushmacse
 ```
 
-Tableau Public
-
-```
-https://public.tableau.com/
-```
-
----
 
 <div align="center">
 
